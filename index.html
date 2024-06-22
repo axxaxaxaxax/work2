@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="box">
+        <header>
+            <h1>Box Shadow Generator</h1>
+            <p>An easy to use tool that allows you to generate ready CSS rules. Adjust box shadow values and copy the ready code.</p>
+        </header>
+        <main>
+            <section class="setting">
+                <h2>CSS box-shadow</h2>
+            
+                <div class="item">
+                <label>Horizontal</label>
+                <span id="x_value">10</span>
+                <input id="horizontal" type="range" min="-100" max="100" value="10" step="1" oninput="fun1()">
+                
+                </div>
+                <div class="item">
+                    <label>Vertical</label>
+                    <span id="y_value">10</span>
+                    <input id="vertical" type="range" min="-100" max="100" value="10" step="1" oninput="fun1()">
+                    
+                </div>
+                <div class="item">
+                    <label>Blur</label>
+                    <span id="b_value">10</span>
+                    <input id="blur" type="range" min="-100" max="100" value="10" step="1" oninput="fun1()">
+                    
+                </div>
+                <div class="item">
+                    <label>Spread</label>
+                    <span id="s_value">10</span>
+                    <input id="spread" type="range" min="-100" max="100" value="10" step="1" oninput="fun1()">
+                    
+                </div>
+                <div class="item">
+                    <label>Color</label>
+                    <input id="color" type="color"  value="10"  oninput="fun1()">
+                    
+                </div>
+            </section>
+            <section class="visual">
+                <div id="shadow" class="experement"></div>
+            </section>
+            <section class="code">
+                <h2 class="cssCode">CSS Code:</h2>
+                <div class="box_code">
+                    <p id="result" class="codecss">box-shadow: 0px 0px 0px 0px black;</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/script.js" ></script>
+</body>
+</html>
